@@ -16,6 +16,10 @@ class TracksPresenter: ViewToPresenterTracksProtocol{
         tracksInteractor?.getAllTracks()
     }
     
+    func search(searchChar: String) {
+        tracksInteractor?.searchTrack(searchChar: searchChar)
+    }
+    
     
 }
 

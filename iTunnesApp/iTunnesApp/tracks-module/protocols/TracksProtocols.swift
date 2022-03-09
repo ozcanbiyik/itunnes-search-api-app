@@ -10,12 +10,14 @@ import Foundation
 protocol PresenterToInteractorTracksProtocol{
     var tracksPresenter: InteractorToPresenterTracksProtocol?{get set}
     func getAllTracks()
+    func searchTrack(searchChar: String)
 }
 
 protocol ViewToPresenterTracksProtocol{
     var tracksInteractor: PresenterToInteractorTracksProtocol?{get set}
     var tracksView: PresenterToViewTracksProtocol?{get set}
     func getTracks()
+    func search(searchChar: String)
     
 }
 

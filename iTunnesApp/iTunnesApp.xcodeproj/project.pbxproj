@@ -17,6 +17,7 @@
 		7C3D482027D6E9AA00800179 /* TracksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D481F27D6E9AA00800179 /* TracksPresenter.swift */; };
 		7C3D482227D6E9FE00800179 /* TracksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D482127D6E9FE00800179 /* TracksInteractor.swift */; };
 		7C3D482527D8328500800179 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7C3D482427D8328500800179 /* Kingfisher */; };
+		7C3D482D27D845A200800179 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D482C27D845A200800179 /* DetailVC.swift */; };
 		7C8C0F5127D6AFC5003B739C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C0F5027D6AFC5003B739C /* AppDelegate.swift */; };
 		7C8C0F5327D6AFC5003B739C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C0F5227D6AFC5003B739C /* SceneDelegate.swift */; };
 		7C8C0F5827D6AFC5003B739C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8C0F5627D6AFC5003B739C /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		7C3D481D27D6E94B00800179 /* TracksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksRouter.swift; sourceTree = "<group>"; };
 		7C3D481F27D6E9AA00800179 /* TracksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksPresenter.swift; sourceTree = "<group>"; };
 		7C3D482127D6E9FE00800179 /* TracksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksInteractor.swift; sourceTree = "<group>"; };
+		7C3D482C27D845A200800179 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		7C8C0F4D27D6AFC5003B739C /* iTunnesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunnesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8C0F5027D6AFC5003B739C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8C0F5227D6AFC5003B739C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,54 @@
 			path = collectionview;
 			sourceTree = "<group>";
 		};
+		7C3D482627D8447800800179 /* detail-module */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D482B27D844D200800179 /* view */,
+				7C3D482A27D844CA00800179 /* presenter */,
+				7C3D482927D844C000800179 /* interactor */,
+				7C3D482827D844B900800179 /* protocols */,
+				7C3D482727D844B300800179 /* router */,
+			);
+			path = "detail-module";
+			sourceTree = "<group>";
+		};
+		7C3D482727D844B300800179 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		7C3D482827D844B900800179 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7C3D482927D844C000800179 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		7C3D482A27D844CA00800179 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		7C3D482B27D844D200800179 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D482C27D845A200800179 /* DetailVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		7C8C0F4427D6AFC5003B739C = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +194,7 @@
 		7C8C0F4F27D6AFC5003B739C /* iTunnesApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C3D482627D8447800800179 /* detail-module */,
 				7C3D480927D6CDB600800179 /* tracks-module */,
 				7C3D481027D6D0BF00800179 /* entity */,
 				7C8C0F5027D6AFC5003B739C /* AppDelegate.swift */,
@@ -237,6 +288,7 @@
 			files = (
 				7C3D482227D6E9FE00800179 /* TracksInteractor.swift in Sources */,
 				7C8C0F5127D6AFC5003B739C /* AppDelegate.swift in Sources */,
+				7C3D482D27D845A200800179 /* DetailVC.swift in Sources */,
 				7C3D481527D6D5B900800179 /* TracksResponse.swift in Sources */,
 				7C3D480827D6BE1100800179 /* TracksVC.swift in Sources */,
 				7C8C0F5327D6AFC5003B739C /* SceneDelegate.swift in Sources */,

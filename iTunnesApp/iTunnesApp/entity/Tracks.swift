@@ -15,12 +15,13 @@ struct Tracks: Codable{
     var releaseDate: String?
     var wrapperType: String?
     var trackName: String?
+    var trackPrice: Double?
     
     init(){
         
     }
     
-    init(artistName: String, collectionName: String, artworkUrl100: String, trackCount: Int, releaseDate: String, wrapperType: String, trackName: String){
+    init(artistName: String, collectionName: String, artworkUrl100: String, trackCount: Int, releaseDate: String, wrapperType: String, trackName: String, trackPrice: Double){
         self.artistName = artistName
         self.collectionName = collectionName
         self.artworkUrl100 = artworkUrl100
@@ -28,5 +29,6 @@ struct Tracks: Codable{
         self.releaseDate = releaseDate
         self.wrapperType = wrapperType
         self.trackName = trackName
+        self.trackPrice = trackPrice
     }
 }

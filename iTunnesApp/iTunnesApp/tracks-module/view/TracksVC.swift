@@ -57,6 +57,11 @@ extension TracksVC: PresenterToViewTracksProtocol{
 extension TracksVC: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         //tracksPresenterObject
+        if searchText == ""{
+            tracksPresenterObject?.getTracks()
+        }else{
+            tracksPresenterObject?.search(searchChar: searchText)
+        }
     }
 }
 
@@ -75,20 +80,27 @@ extension TracksVC: UICollectionViewDelegate, UICollectionViewDataSource{
         cell.tracksImageName(tracksName: track.artworkUrl100 ?? "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ae/4c/d4/ae4cd42a-80a9-d950-16f5-36f01a9e1881/source/100x100bb.jpg")
         
         cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 0.5
+        cell.layer.borderWidth = 0.1
         cell.layer.cornerRadius = 10
-        
-        //
-        
         
         return cell
         
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let _ = tracks[indexPath.row]
-        //
+        let track = tracks[indexPath.row]
+        collectionView.deselectItem(at: indexPath, animated: true)
+        performSegue(withIdentifier: "toDetail", sender: track)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail"{
+            let track = sender as? Tracks
+            let goToVC = segue.destination as! DetailVC
+            goToVC.track = track
+        }
+    }
+    
     
 }
 
