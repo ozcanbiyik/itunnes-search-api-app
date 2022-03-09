@@ -35,54 +35,55 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FdZ-Jf-LLZ">
-                                                    <rect key="frame" x="8" y="64" width="128" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="128" id="5rR-1J-fh8"/>
-                                                        <constraint firstAttribute="height" constant="128" id="mcL-mK-bUw"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="64" y="2" width="128" height="151.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtZ-5W-9Pr">
-                                                    <rect key="frame" x="152" y="64" width="71" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djx-8e-iKn">
-                                                    <rect key="frame" x="152" y="93" width="41" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="102" y="158.5" width="52" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edt-AS-ydx">
-                                                    <rect key="frame" x="152" y="122" width="40" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="113.5" y="178" width="29.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoQ-d5-M6c">
-                                                    <rect key="frame" x="152" y="151" width="82" height="31"/>
+                                                    <rect key="frame" x="87" y="217" width="82" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="INSPECT" titleAlignment="leading"/>
                                                     <connections>
                                                         <action selector="inspectButtonClicked:" destination="zir-Jv-8xo" eventType="touchUpInside" id="qyQ-gR-sIz"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djx-8e-iKn">
+                                                    <rect key="frame" x="112.5" y="197.5" width="31" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Djx-8e-iKn" firstAttribute="leading" secondItem="FdZ-Jf-LLZ" secondAttribute="trailing" constant="16" id="076-kI-yGK"/>
-                                                <constraint firstItem="EoQ-d5-M6c" firstAttribute="leading" secondItem="FdZ-Jf-LLZ" secondAttribute="trailing" constant="16" id="62c-5c-MgK"/>
-                                                <constraint firstItem="FdZ-Jf-LLZ" firstAttribute="top" secondItem="TNw-Tf-IAU" secondAttribute="top" constant="64" id="Lez-0C-VTe"/>
-                                                <constraint firstItem="vtZ-5W-9Pr" firstAttribute="leading" secondItem="FdZ-Jf-LLZ" secondAttribute="trailing" constant="16" id="OMw-y0-D3P"/>
-                                                <constraint firstItem="Djx-8e-iKn" firstAttribute="top" secondItem="vtZ-5W-9Pr" secondAttribute="bottom" constant="8" id="Pz4-dz-L72"/>
-                                                <constraint firstItem="EoQ-d5-M6c" firstAttribute="top" secondItem="edt-AS-ydx" secondAttribute="bottom" constant="8" id="QnK-q1-pa8"/>
-                                                <constraint firstItem="FdZ-Jf-LLZ" firstAttribute="leading" secondItem="TNw-Tf-IAU" secondAttribute="leading" constant="8" id="Tmt-iX-6JG"/>
-                                                <constraint firstItem="edt-AS-ydx" firstAttribute="top" secondItem="Djx-8e-iKn" secondAttribute="bottom" constant="8" id="fJP-Ji-EFa"/>
-                                                <constraint firstItem="vtZ-5W-9Pr" firstAttribute="top" secondItem="TNw-Tf-IAU" secondAttribute="top" constant="64" id="hE7-Wj-e46"/>
-                                                <constraint firstItem="edt-AS-ydx" firstAttribute="leading" secondItem="FdZ-Jf-LLZ" secondAttribute="trailing" constant="16" id="iug-Mg-O3h"/>
+                                                <constraint firstItem="vtZ-5W-9Pr" firstAttribute="top" secondItem="FdZ-Jf-LLZ" secondAttribute="bottom" constant="5" id="0RA-1r-yeL"/>
+                                                <constraint firstItem="FdZ-Jf-LLZ" firstAttribute="centerX" secondItem="TNw-Tf-IAU" secondAttribute="centerX" id="GOP-jt-AkS"/>
+                                                <constraint firstItem="EoQ-d5-M6c" firstAttribute="centerX" secondItem="TNw-Tf-IAU" secondAttribute="centerX" id="Ou3-vE-I7t"/>
+                                                <constraint firstItem="EoQ-d5-M6c" firstAttribute="bottom" secondItem="TNw-Tf-IAU" secondAttribute="bottomMargin" id="QSo-sF-qy9"/>
+                                                <constraint firstItem="Djx-8e-iKn" firstAttribute="centerX" secondItem="TNw-Tf-IAU" secondAttribute="centerX" id="WMS-uN-jLF"/>
+                                                <constraint firstItem="edt-AS-ydx" firstAttribute="top" secondItem="vtZ-5W-9Pr" secondAttribute="bottom" constant="5" id="bpw-Un-JP5"/>
+                                                <constraint firstAttribute="trailing" secondItem="FdZ-Jf-LLZ" secondAttribute="trailing" constant="64" id="cN6-bC-TAi"/>
+                                                <constraint firstItem="vtZ-5W-9Pr" firstAttribute="centerX" secondItem="TNw-Tf-IAU" secondAttribute="centerX" id="gHp-w5-YS2"/>
+                                                <constraint firstItem="edt-AS-ydx" firstAttribute="centerX" secondItem="TNw-Tf-IAU" secondAttribute="centerX" id="jOl-7K-71n"/>
+                                                <constraint firstItem="Djx-8e-iKn" firstAttribute="top" secondItem="edt-AS-ydx" secondAttribute="bottom" constant="5" id="lgQ-00-TFl"/>
+                                                <constraint firstItem="FdZ-Jf-LLZ" firstAttribute="leading" secondItem="TNw-Tf-IAU" secondAttribute="leading" constant="64" id="mkC-hg-UlH"/>
+                                                <constraint firstItem="FdZ-Jf-LLZ" firstAttribute="top" secondItem="TNw-Tf-IAU" secondAttribute="top" constant="2" id="s2M-XN-P8x"/>
+                                                <constraint firstItem="EoQ-d5-M6c" firstAttribute="top" secondItem="Djx-8e-iKn" secondAttribute="bottom" constant="5" id="saY-aw-C34"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="artistNameLabel" destination="Djx-8e-iKn" id="X9d-pY-fXH"/>
+                                            <outlet property="categoryNameLabel" destination="vtZ-5W-9Pr" id="IM3-aX-fr8"/>
+                                            <outlet property="trackNameLabel" destination="edt-AS-ydx" id="Iti-01-FNc"/>
                                             <outlet property="tracksImage" destination="FdZ-Jf-LLZ" id="YC2-as-LfQ"/>
                                         </connections>
                                     </collectionViewCell>
