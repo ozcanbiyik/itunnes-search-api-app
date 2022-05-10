@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailVC: UIViewController {
 
@@ -24,9 +25,11 @@ class DetailVC: UIViewController {
         super.viewDidLoad()
         
         if let t = track{
+            
+            trackImageName(trackImage: t.artworkUrl100 ?? "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ae/4c/d4/ae4cd42a-80a9-d950-16f5-36f01a9e1881/source/100x100bb.jpg")
             artistNameLabel.text = t.artistName
             trackNameLabel.text = t.trackName
-            trackPriceLabel.text = "\(t.trackPrice!)$"
+            trackPriceLabel.text = "\(t.trackPrice ?? 0)$"
             collectionNameLabel.text = t.collectionName
             wrapperTypeLabel.text = t.wrapperType
             
@@ -37,4 +40,12 @@ class DetailVC: UIViewController {
 
     }
     
+    func trackImageName(trackImage: String){
+        if let url = URL(string: "\(trackImage)"){
+            DispatchQueue.main.async {
+                self.trackImage.kf.setImage(with:url)
+            }
+        }
+    }
 }
+
